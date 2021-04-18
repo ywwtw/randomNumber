@@ -4,13 +4,37 @@
     box-sizing: border-box;
 }
 .result{
-    left: 50%;
-    transform: translateX(-50%);
-    font-size: 60px;
+    font-size: 58px;
     text-align: center;
+    background-color: transparent;
+    z-index: 2;
 }
 .tilde{
     padding: 0 10px;
     margin: 0;
     line-height: 38px;
+}
+.allstudent{
+    display: flex;
+    flex-wrap: wrap;
+}
+.student{
+    text-align: center;
+    padding: 5px;
+}
+.studentImg{
+    width: 60px;
+    height: 60px;
+    border-radius: 100px;
+    background-color: #fff;
+}
+.who{
+    display: flex;
+    justify-content: center;
+}
+.displayPic{
+    width: 160px;
+    height: 160px;
+    border-radius: 160px;
+    border: 5px solid #818182;
 }
