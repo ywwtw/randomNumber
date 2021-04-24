@@ -6,8 +6,13 @@
 .result{
     font-size: 58px;
     text-align: center;
-    background-color: transparent;
+    /* background-color: transparent; */
     z-index: 2;
+}
+.left, .right{
+    display: inline-block;
+    width: 63px;
+    margin: 0 -10px;
 }
 .tilde{
     padding: 0 10px;

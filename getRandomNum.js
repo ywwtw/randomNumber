@@ -153,7 +153,10 @@ function start(){
             let picIndex = myclassList.findIndex(x=>x.id === random);
             result.innerHTML =`
             <div><img src="${myclassList[picIndex].img}" class="displayPic"></div>
-            <div class="result">${random}號</div>
+            <div class="result">
+            <div class = "left">${random}</div>
+            <div class = "right">號</div>
+            </div>
             `       
         }                   
             setTimeout(function(){
