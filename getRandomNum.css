@@ -12,7 +12,7 @@
 .left, .right{
     display: inline-block;
     width: 63px;
-    margin: 0 -8px;
+    margin: 0 -5px;
 }
 .tilde{
     padding: 0 10px;
