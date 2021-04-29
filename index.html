@@ -10,17 +10,26 @@
 </head>
 <body>
 
-    <div class="jumbotron">
-        <h1 class="display-5">我們這一班</h1>
-        <p class="lead">隨機號碼產生器</p>
-        <hr class="my-2">
-
-        <div class = "allstudent" id="pic"></div>
-
-        <button type="button" class="btn btn-info" onclick="start()">開始抽籤</button>
+    <div class="jumbotron main">
+        <h1 class="display-5"><img src="./img/title2.png" alt="我們這一班" class="title"></h1> 
+        <div class="allstudent">
+            <div class="studentB">
+                <div class="picB" id="picB1"></div>
+                <div class="picB" id="picB2"></div>
+                <div class="picB" id="picB3"></div>
+                <div class="picB" id="picB4"></div>
+            </div>
+            <img src="./img/resultpic2.png" alt="" class="resultpic">
+            <div class = "studentG" id="picG">
+                <div id="picG1"></div>
+                <div id="picG2"></div>
+                <div id="picG3"></div>
+                <div id="picG4"></div>
+            </div>  
+        </div>                    
+        <div class="result alert alert-light mt-3" role="alert" id="result"></div>
+        <button type="button" class="btn" onclick="start()">隨機號碼</button>
     </div>
-    
-<div class="result alert alert-light mt-3" role="alert" id="result">中獎的是...</div>
     
 
     <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/3.6.0/jquery.min.js"></script>

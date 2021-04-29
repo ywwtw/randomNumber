@@ -138,10 +138,44 @@ function createImage(myclass){
     return members;
 }
 
-myclassList.forEach(myclass => {
-    const classmembers = createImage(myclass);
-    $("#pic").append(classmembers);
-});
+// myclassList.forEach(myclass => {
+//     const classmembers = createImage(myclass);
+//     $("#pic").append(classmembers);
+// });
+for(let i=0;i<4;i++){
+    const classB=createImage(myclassList[i]);
+    $("#picB1").append(classB);
+}
+for(let i=4;i<8;i++){
+    const classB=createImage(myclassList[i]);
+    $("#picB2").append(classB);
+}
+for(let i=8;i<12;i++){
+    const classB=createImage(myclassList[i]);
+    $("#picB3").append(classB);
+}
+for(let i=12;i<16;i++){
+    const classB=createImage(myclassList[i]);
+    $("#picB4").append(classB);
+}
+
+
+for(let i=16;i<20;i++){
+    const classG=createImage(myclassList[i]);
+    $("#picG1").append(classG);
+}
+for(let i=20;i<24;i++){
+    const classG=createImage(myclassList[i]);
+    $("#picG2").append(classG);
+}
+for(let i=24;i<28;i++){
+    const classG=createImage(myclassList[i]);
+    $("#picG3").append(classG);
+}
+for(let i=28;i<32;i++){
+    const classG=createImage(myclassList[i]);
+    $("#picG4").append(classG);
+}
 function start(){
     let result = document.getElementById('result');
     let getRandom = setInterval(displayNum, 50);
@@ -153,7 +187,7 @@ function start(){
             let picIndex = myclassList.findIndex(x=>x.id === random);
             result.innerHTML =`
             <div><img src="${myclassList[picIndex].img}" class="displayPic"></div>
-            <div class="result">
+            <div class="resultnum">
             <div class = "left">${random}</div>
             <div class = "right">號</div>
             </div>
