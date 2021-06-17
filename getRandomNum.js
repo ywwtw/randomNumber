@@ -138,10 +138,6 @@ function createImage(myclass){
     return members;
 }
 
-// myclassList.forEach(myclass => {
-//     const classmembers = createImage(myclass);
-//     $("#pic").append(classmembers);
-// });
 for(let i=0;i<4;i++){
     const classB=createImage(myclassList[i]);
     $("#picB1").append(classB);
@@ -178,7 +174,7 @@ for(let i=28;i<32;i++){
 }
 function start(){
     let result = document.getElementById('result');
-    let getRandom = setInterval(displayNum, 50);
+    let getRandom = setInterval(displayNum, 30);
     function displayNum(){   
         random = Math.floor(Math.random() * 46 + 1);
         if(random>16 && random<31){
@@ -195,7 +191,7 @@ function start(){
         }                   
             setTimeout(function(){
                 clearInterval(getRandom);
-            },3000);  
+            },1000);  
                 
     }       
 }
